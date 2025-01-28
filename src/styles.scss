@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --color-primary: #011638; // Top bar & sidenav (Oxford Blue)
+  --color-secondary: #839791; // Buttons (Battleship Gray)
+  --color-tertiary: #AAC0AF; // Dialogs & components (Ash Gray)
+
+  // Colores de acento
+  --color-highlight: #896978; // Highlights (Mountbatten Pink)
+  --color-contrast: #F4B393; // Contrast (Peach)
+
+  // Texto y fondos
+  --color-text-primary: #FFFFFF; // Texto sobre fondos oscuros
+  --color-text-secondary: #333333; // Texto sobre fondos claros
+  --color-background: #F9F9F9; // Fondo general
+
+  }
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+

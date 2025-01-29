@@ -1,5 +1,53 @@
 .body{
-  height: 100vh;
+  padding: 1rem;
+  height: calc(100vh - 8rem);;
     background-color: var(--color-background);
     color: var(--color-text-secondary);
+    .main-cards{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .ad-card{
+        width: 30%;
+        height: 10%;
+
+        mat-card-header{
+          mat-card-title{
+            font-family: "Montserrat", serif;
+          }
+          mat-card-subtitle{
+            font-family: "Montserrat", serif;
+
+          }
+        }
+
+        .card-img{
+          width: 70%;
+          align-self: center;
+
+          img{
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+
+        }
+        mat-card-content{
+          padding-top: 1rem;
+          display: flex;
+          align-items: center;
+          p{
+            padding-inline: 1.5rem;
+
+          }
+
+        }
+        mat-card-actions{
+          display: flex;
+          justify-content: center;
+        }
+
+      }
+    }
+
 }

@@ -3,12 +3,12 @@
     <img src="/assets/logo-white.png" />
   </div>
   <div class="header__search">
-    <input type="text" placeholder="Search recipes..." />
-    <button type="button">
-      <i class="fas fa-search"></i> <!-- Usando FontAwesome para el ícono -->
+      <input type="text" class="search-input" placeholder="Enter your search term" [(ngModel)]="searchTerm">
+      <button mat-icon-button class="search-button" (click)="onSearch()">
+      <mat-icon>search</mat-icon>
     </button>
   </div>
   <div class="header__actions">
-    <button mat-raised-button color="primary">Botón Material</button>
+    <button mat-raised-button >Botón Material</button>
   </div>
 </div>

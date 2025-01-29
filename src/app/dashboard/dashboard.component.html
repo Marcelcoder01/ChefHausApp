@@ -1,0 +1,13 @@
+<mat-drawer-container class="dashboard-container">
+  <mat-drawer mode="side" #drawer opened class="dashboard-sidebar" [ngClass]="{'drawer-collapsed': drawerCollapsed}">
+    <app-sidebar (collapseParentDrawer)="collapseDrawerAction($event)" (navigateToModule)="changeRoute($event)"></app-sidebar>
+  </mat-drawer>
+  <mat-drawer-content [ngClass]="drawerCollapsed ? 'content-collapsed' : 'content-expanded'">
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+
+  <div class="dashboard-body">
+
+  </div>
+
+</mat-drawer-container>

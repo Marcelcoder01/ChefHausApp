@@ -19,6 +19,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { SublevelMenuComponent } from './dashboard/components/sidebar/sublevel-menu.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './dashboard/home/home.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HomeComponent } from './dashboard/home/home.component';
     HomeComponent,
     SidebarComponent,
     DashboardComponent,
-    SublevelMenuComponent
+    SublevelMenuComponent,
+    LoginComponent
 
   ],
   imports: [
